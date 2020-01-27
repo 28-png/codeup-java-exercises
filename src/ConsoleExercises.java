@@ -19,11 +19,16 @@ public static void main(String[] args) {
 //    System.out.println(word2);
 //    System.out.println(word3);
 
-    System.out.print("enter a sentence: ");
-    String sentence = scanner.nextLine();
-    System.out.println(sentence);
+//    System.out.print("enter a sentence: ");
+//    String sentence = scanner.nextLine();
+//    System.out.println(sentence);
 
 
+
+    System.out.print("enter the length and width of a classroom: ");
+    String result = scanner.nextLine();
+
+    System.out.println();
 
 
 
