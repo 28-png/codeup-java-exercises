@@ -27,8 +27,9 @@ public static void main(String[] args) {
 
     System.out.print("enter the length and width of a classroom: ");
     String result = scanner.nextLine();
+    int result2 = Integer.parseInt(result);
 
-    System.out.println();
+    System.out.println(result2);
 
 
 
