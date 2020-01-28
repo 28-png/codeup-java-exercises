@@ -24,12 +24,15 @@ public static void main(String[] args) {
 //    System.out.println(sentence);
 
 
+    System.out.print("what is the width of the classroom: ");
+    int width = scanner.nextInt();
+    System.out.print("What is the length of the classroom: ");
+    int length = scanner.nextInt();
+    int area = length * width;
+    int perimeter = (2 * width) + (2 * width);
 
-    System.out.print("enter the length and width of a classroom: ");
-    String result = scanner.nextLine();
-    int result2 = Integer.parseInt(result);
-
-    System.out.println(result2);
+    System.out.println("the area of the classroom is: " + area);
+    System.out.println("the perimeter of the classroom is: " + perimeter);
 
 
 
