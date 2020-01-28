@@ -35,6 +35,7 @@ public static void main(String[] args) {
     System.out.println("the perimeter of the classroom is: " + perimeter);
 
 
+// teacher solution
 
 
 
