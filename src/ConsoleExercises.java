@@ -30,9 +30,7 @@ public static void main(String[] args) {
     int length = scanner.nextInt();
     int area = length * width;
     int perimeter = (2 * width) + (2 * width);
-
-    System.out.println("the area of the classroom is: " + area);
-    System.out.println("the perimeter of the classroom is: " + perimeter);
+    System.out.printf("the dimensions are %d by %d and the area is %d while the perimeter is %d.", length, width, area, perimeter);
 
 
 // teacher solution
