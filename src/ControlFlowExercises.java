@@ -52,7 +52,7 @@ public static void main(String[] args) {
 //    }
 
 
-    System.out.println("Please enter your grade: ");
+    System.out.print("Please enter your grade: ");
     int number = scanner.nextInt();
     if(number<=100 && number>=99)
         System.out.println("A+: 100-99");
