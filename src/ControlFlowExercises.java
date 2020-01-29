@@ -40,18 +40,32 @@ public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
 
-    int number, cube, square;
-    System.out.print("What number would you like to go up to? ");
-    number = scanner.nextInt();
-        System.out.println("number | squared | cubed");
-        System.out.println("-------|---------|-------");
-    for(int i = 1; i <= number; i++) {
-        square = i * i;
-        cube = i * square;
-        System.out.println(i+ "      |" +square+ "       |" + cube);
-    }
+//    int number, cube, square;
+//    System.out.print("What number would you like to go up to? ");
+//    number = scanner.nextInt();
+//        System.out.println("number | squared | cubed");
+//        System.out.println("-------|---------|-------");
+//    for(int i = 1; i <= number; i++) {
+//        square = i * i;
+//        cube = i * square;
+//        System.out.println(i+ "      |" +square+ "       |" + cube);
+//    }
 
 
+    System.out.println("Please enter your grade: ");
+    int number = scanner.nextInt();
+    if(number<=100 && number>=99)
+        System.out.println("A+: 100-99");
+   else if(number<=100 && number>=88)
+        System.out.println("A: 98-88");
+    else if(number<=87 && number>=80)
+        System.out.println("B: 87-80");
+    else if(number<=79 && number>=67)
+        System.out.println("C: 79-67");
+    else if(number<=66 && number>=60)
+    System.out.println("D: 66-60");
+    else if(number<=59 && number>=0)
+        System.out.println("F: 59-0");
 
 
 
