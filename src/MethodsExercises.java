@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
     public static void main(String[] args) {
         System.out.println(add(2, 2));
@@ -7,6 +9,10 @@ public class MethodsExercises {
         System.out.println(remainder(10, 3));
 
 
+
+
+
+    getInteger(1,10);
 
     }
 
@@ -36,6 +42,20 @@ public class MethodsExercises {
     }
 
 
+    public static void getInteger(int min, int max) {
+    int answer;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number between 1 and 10: ");
+        answer = scanner.nextInt();
+        do {
+            if(answer > max || answer < min)
+                System.out.println("that is not a number between 1 and 10");
+            System.out.print("Enter a number between 1 and 10: ");
+                answer = scanner.nextInt();
+        } while(!(answer <= 10) ||  !(answer >=1));
+        System.out.println("congrats!");
+
+    }
 
 
 }
