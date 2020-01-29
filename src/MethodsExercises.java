@@ -43,6 +43,7 @@ public class MethodsExercises {
 
 
     public static void getInteger(int min, int max) {
+        int i, answer2 = 1;
     int answer;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number between 1 and 10: ");
@@ -53,7 +54,11 @@ public class MethodsExercises {
             System.out.print("Enter a number between 1 and 10: ");
                 answer = scanner.nextInt();
         } while(!(answer <= 10) ||  !(answer >=1));
-        System.out.println("congrats!");
+        for(i = 1; i <= answer; i++) {
+            answer2=answer2*i;
+        }
+
+        System.out.println(answer + "! = " + answer2 );
 
     }
 
