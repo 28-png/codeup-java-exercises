@@ -52,20 +52,20 @@ public static void main(String[] args) {
 //    }
 
 
-    System.out.print("Please enter your grade: ");
-    int number = scanner.nextInt();
-    if(number<=100 && number>=99)
-        System.out.println("A+: 100-99");
-   else if(number<=100 && number>=88)
-        System.out.println("A: 98-88");
-    else if(number<=87 && number>=80)
-        System.out.println("B: 87-80");
-    else if(number<=79 && number>=67)
-        System.out.println("C: 79-67");
-    else if(number<=66 && number>=60)
-    System.out.println("D: 66-60");
-    else if(number<=59 && number>=0)
-        System.out.println("F: 59-0");
+//    System.out.print("Please enter your grade: ");
+//    int number = scanner.nextInt();
+//    if(number<=100 && number>=99)
+//        System.out.println("A+: 100-99");
+//   else if(number<=100 && number>=88)
+//        System.out.println("A: 98-88");
+//    else if(number<=87 && number>=80)
+//        System.out.println("B: 87-80");
+//    else if(number<=79 && number>=67)
+//        System.out.println("C: 79-67");
+//    else if(number<=66 && number>=60)
+//    System.out.println("D: 66-60");
+//    else if(number<=59 && number>=0)
+//        System.out.println("F: 59-0");
 
 
 
