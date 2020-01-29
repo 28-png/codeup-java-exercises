@@ -40,16 +40,16 @@ public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
 
-//    int number, cube, square;
-//    System.out.print("What number would you like to go up to? ");
-//    number = scanner.nextInt();
-//        System.out.println("number | squared | cubed");
-//        System.out.println("-------|---------|-------");
-//    for(int i = 1; i <= number; i++) {
-//        square = i * i;
-//        cube = i * square;
-//        System.out.println(i+ "      |" +square+ "       |" + cube);
-//    }
+    int number, cube, square;
+    System.out.print("What number would you like to go up to? ");
+    number = scanner.nextInt();
+        System.out.println("number | squared | cubed");
+        System.out.println("-------|---------|-------");
+    for(int i = 1; i <= number; i++) {
+        square = i * i;
+        cube = i * square;
+        System.out.printf("%-7d|%-9d|%d\n",i, square, cube);
+    }
 
 
 //    System.out.print("Please enter your grade: ");
