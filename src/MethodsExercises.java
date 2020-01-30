@@ -83,7 +83,7 @@ public class MethodsExercises {
             roll = scanner.nextInt();
             twoDice = roll * 2;
             System.out.println(Math.round(Math.random() * twoDice));
-            System.out.println("Would you like to roll again? ");
+            System.out.print("Would you like to roll again? ");
             answer = scanner.next();
         } while(!answer.equals("no"));
 
