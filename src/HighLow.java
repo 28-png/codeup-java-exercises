@@ -21,10 +21,12 @@ public static void gameHighLow() {
            System.out.println("LOWER");
      else if (answer < finalAnswer)
             System.out.println("HIGHER");
-        else
+        else {
             System.out.println("GOOD GUESS!");
-    System.out.print("Would you like to try again? \n");
-  continueOn = scanner.next();
+            break;
+        }
+            System.out.print("Would you like to try again? \n");
+            continueOn = scanner.next();
     }while(!continueOn.equals("no"));
 }
 
