@@ -46,25 +46,22 @@ public class MethodsExercises {
 
 
     public static void getInteger() {
-        int min;
         int max;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a min: ");
-        min = scanner.nextInt();
-        System.out.print("Enter a max: ");
+        System.out.print("Enter a number that can return the highest factorial from 1 being the min: ");
         max = scanner.nextInt();
         int i, answer2 = 1;
         int answer;
-        System.out.print("Enter a number between " + min + " and " + max + ":" + "\n");
+        System.out.print("Enter a number between 1 and " + max + ":" + "\n");
         answer = scanner.nextInt();
         do {
-            if (answer > max || answer < min)
-                System.out.print("That is not a number between " + min + " and " + max  + "\n");
+            if (answer > max || answer < 1)
+                System.out.print("That is not a number between 1 and " + max  + "\n");
            else
                continue;
-            System.out.print("Enter a number between " + min + " and " + max + ":" + "\n");
+            System.out.print("Enter a number between 1 and " + max + ":" + "\n");
             answer = scanner.nextInt();
-        } while (!(answer <= max) || !(answer >= min));
+        } while (!(answer <= max) || !(answer >= 1));
         for (i = 1; i <= answer; i++) {
             answer2 = answer2 * i;
         }
