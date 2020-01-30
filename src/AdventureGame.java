@@ -15,6 +15,23 @@ public class AdventureGame {
     public static void mainAdventureGame() {
 
 
+   }
+
+   public static void leftAdventureGame() {
+
+
+    }
+
+
+    public static void rightAdventureGame() {
+
+
+    }
+
+
+    public static void backAdventureGame() {
+
+
     }
 
 
