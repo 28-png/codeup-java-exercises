@@ -12,7 +12,7 @@ public class MethodsExercises {
 
 
 
-    getInteger(1,10);
+    getInteger();
 
     }
 
@@ -42,25 +42,43 @@ public class MethodsExercises {
     }
 
 
-    public static void getInteger(int min, int max) {
-        int i, answer2 = 1;
-    int answer;
+
+
+
+    public static void getInteger() {
+        int min;
+        int max;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number between 1 and 10: ");
+        System.out.print("Enter a min: ");
+        min = scanner.nextInt();
+        System.out.print("Enter a max: ");
+        max = scanner.nextInt();
+        int i, answer2 = 1;
+        int answer;
+        System.out.print("Enter a number between " + min + " and " + max + ":" + "\n");
         answer = scanner.nextInt();
         do {
-            if(answer > max || answer < min)
-                System.out.println("that is not a number between 1 and 10");
-            System.out.print("Enter a number between 1 and 10: ");
-                answer = scanner.nextInt();
-        } while(!(answer <= 10) ||  !(answer >=1));
-        for(i = 1; i <= answer; i++) {
-            answer2=answer2*i;
+            if (answer > max || answer < min)
+                System.out.print("That is not a number between " + min + " and " + max  + "\n");
+           else
+               continue;
+            System.out.print("Enter a number between " + min + " and " + max + ":" + "\n");
+            answer = scanner.nextInt();
+        } while (!(answer <= max) || !(answer >= min));
+        for (i = 1; i <= answer; i++) {
+            answer2 = answer2 * i;
         }
 
-        System.out.println(answer + "! = " + answer2 );
+        System.out.println(answer + "! = " + answer2);
 
     }
+
+
+
+
+
+
+
 
 
 }
