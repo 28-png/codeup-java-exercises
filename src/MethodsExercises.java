@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 public class MethodsExercises {
     public static void main(String[] args) {
-        System.out.println(add(2, 2));
-        System.out.println(sub(3, 9));
-        System.out.println(mult(4, 9));
-        System.out.println(div(20, 5));
-        System.out.println(remainder(10, 3));
+//        System.out.println(add(2, 2));
+//        System.out.println(sub(3, 9));
+//        System.out.println(mult(4, 9));
+//        System.out.println(div(20, 5));
+//        System.out.println(remainder(10, 3));
+
+//    getInteger();
+
+    rollDice();
 
 
 
-
-
-    getInteger();
 
     }
 
@@ -43,7 +44,7 @@ public class MethodsExercises {
 
 
 
-
+//    Factorial Exercise:
 
     public static void getInteger() {
         int max;
@@ -70,7 +71,23 @@ public class MethodsExercises {
 
     }
 
+//    Dice Exercise:
 
+    public static void rollDice() {
+        String answer;
+        int roll;
+        int twoDice;
+        do {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter the number of sides for a pair of dice: ");
+            roll = scanner.nextInt();
+            twoDice = roll * 2;
+            System.out.println(Math.round(Math.random() * twoDice));
+            System.out.println("Would you like to roll again? ");
+            answer = scanner.next();
+        } while(!answer.equals("no"));
+
+    }
 
 
 
