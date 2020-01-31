@@ -73,6 +73,12 @@ public class AdventureGame {
        } while(moving.equals("forward"));
    }
 
+//
+
+   public static void hitSmallEnemyOnForward() {
+
+   }
+
 
 
 //   moving left method:
