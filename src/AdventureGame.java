@@ -10,16 +10,28 @@ public class AdventureGame {
 
 
 //    variables
+
     static Scanner scanner = new Scanner(System.in);
+
     static String moving, smallEnemy, largeEnemy;
+
    static int smallEnemyHealth = 2;
+
    static int largeEnemyHealth = 4;
+
    static int yourHealth = 5;
+
    static int healthStim = 0;
+
    static int healthstimAmount = 3;
+
    static int stimPackAfterEnemy = 1;
+
    static int movement = (int) (Math.random() * 40 + 1);
-   static int ourDamageSmallEnemy, ourDamageLargeEnemy, largeEnemyDamage, smallEnemyDamage = (int) (Math.random() * 50 + 1);
+
+  static int ourDamageSmallEnemy, ourDamageLargeEnemy,
+           largeEnemyDamage, smallEnemyDamage = (int) (Math.random() * 50 + 1);
+
 // end of main variables
 
 
@@ -41,12 +53,13 @@ public class AdventureGame {
 
 
 
+
    }
 
 //  moving forward method:
 
-    static boolean forwardSmallEnemy = movement < 20 && movement > 10;
-    static boolean forwardLargeEnemy = movement < 10 && movement > 1;
+   static boolean forwardSmallEnemy = movement < 20 && movement > 10;
+   static boolean forwardLargeEnemy = movement < 10 && movement > 1;
 
     public static void forwardAdventureGame() {
        do {
@@ -115,7 +128,6 @@ public class AdventureGame {
             moving = scanner.next();
         }while(moving.equals("back"));
     }
-
 
 
 
