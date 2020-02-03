@@ -1,6 +1,7 @@
 package movies;
 
 public class Movie {
+    MoviesArray list = new MoviesArray();
     private String name;
     private String categories;
 
@@ -18,6 +19,8 @@ public class Movie {
     public String getCategories() {
         return this.categories;
     }
+
+
 
 
 
