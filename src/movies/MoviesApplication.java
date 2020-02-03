@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class MoviesApplication {
     public static void main(String[] args) {
-    MoviesArray lists = new MoviesArray();
+        Movie[] list = MoviesArray.findAll();
     Movie movie = new Movie("name", "categories");
 //        Scanner scanner = new Scanner(System.in);
 //        String viewList;
@@ -20,7 +20,6 @@ public class MoviesApplication {
 //
 //        System.out.println("Enter your choice: ");
 //        viewList = scanner.next();
-
 
 
     }
