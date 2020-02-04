@@ -6,7 +6,7 @@ public class Movie {
     private String categories;
 
     public Movie(String name, String categories) {
-        this.name = name;
+       this.name = name;
         this.categories = categories;
     }
 
@@ -14,8 +14,16 @@ public class Movie {
         return name;
     }
 
+    public String setName() {
+        return this.name = name;
+    }
+
     public String getCategories() {
         return categories;
+    }
+
+    public String setCategories() {
+        return this.categories = categories;
     }
 
 
