@@ -4,22 +4,24 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MoviesApplication {
+    final static String[] categories = {"none", "all", "animated", "drama", "horror", "scifi"};
     public static void main(String[] args) {
+
         Movie[] list = MoviesArray.findAll();
     Movie movie = new Movie("name", "categories");
-//        Scanner scanner = new Scanner(System.in);
-//        String viewList;
-//        System.out.println("What would you like to do?\n");
-//
-//        System.out.println("0 - exit");
-//        System.out.println("1 - view all movies");
-//        System.out.println("2 - view movies in the animated category");
-//        System.out.println("3 - view movies in the drama category");
-//        System.out.println("4 - View movies in the horror category");
-//        System.out.println("5 - View movies in the Scifi category\n");
-//
-//        System.out.println("Enter your choice: ");
-//        viewList = scanner.next();
+        Scanner scanner = new Scanner(System.in);
+        String viewList;
+        System.out.println("What would you like to do?\n");
+
+        System.out.println("0 - exit");
+        System.out.println("1 - view all movies");
+        System.out.println("2 - view movies in the animated category");
+        System.out.println("3 - view movies in the drama category");
+        System.out.println("4 - View movies in the horror category");
+        System.out.println("5 - View movies in the Scifi category\n");
+
+        System.out.println("Enter your choice: ");
+        viewList = scanner.next();
 
     for(Movie m : list) {
         System.out.print("\n" + m.getName() + " -- " + m.getCategories());
