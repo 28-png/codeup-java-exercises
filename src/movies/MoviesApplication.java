@@ -21,6 +21,9 @@ public class MoviesApplication {
 //        System.out.println("Enter your choice: ");
 //        viewList = scanner.next();
 
+    for(Movie m : list) {
+        System.out.print("\n" + m.getName() + " -- " + m.getCategories());
+    }
 
     }
 
