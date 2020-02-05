@@ -6,7 +6,7 @@ public class Student {
 private String name;
 private ArrayList<Integer> grades;
 
-public Student(String name, Integer grades) {
+public Student(String name, int grades) {
     this.name = name;
     this.grades = new ArrayList<>();
 }
@@ -17,11 +17,22 @@ public Student(String name, Integer grades) {
 
     public void addGrade(int grade) {
 
+
     }
 
     public double getGradeAverage() {
 
-}
+
+    }
+
+    public static void main(String[] args) {
+
+
+
+
+
+
+    }
 
 
 
