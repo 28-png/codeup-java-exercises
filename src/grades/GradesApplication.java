@@ -1,10 +1,14 @@
 package grades;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class GradesApplication  {
 
     public static void main(String[] args) {
+        boolean yes = true;
+        Scanner scanner = new Scanner(System.in);
+        String enterName;
         HashMap<String, String> students = new HashMap<>();
         students.put("Matt", "28-png");
         students.put("John", "John@Boyega");
@@ -43,13 +47,17 @@ public class GradesApplication  {
         fabio.addGrade(80);
 //        System.out.println(john.getGradeAverage());
 
+        do {
+            System.out.println("Welcome!\n");
+            System.out.println("Here are the GitHub usernames of our students: \n");
+            System.out.println("|28-png| |John@Boyega| |Pierce@Guy| |Fabio@Gonzalez|\n");
+            System.out.println("What student would you like to see more information on?");
+            enterName = scanner.next();
+            if(enterName.equals(students.get("Matt")))
+                System.out.println("Name: Matt - Github Username: 28-png");
+            System.out.println("Current Average: " + matt.getGradeAverage());
 
-        System.out.println("Welcome!\n");
-        System.out.println("Here are the GitHub usernames of our students: \n");
-        System.out.println("|28-png| |John@Boyega| |Pierce@Guy| |Fabio@Gonzalez|\n");
-
-
-
+        } while(!enterName.equals("no"));
 
     }
 
