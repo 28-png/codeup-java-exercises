@@ -5,6 +5,25 @@ import java.util.Arrays;
 public class ShapesTest {
 
     public static void main(String[] args) {
+        Measurable myShape = new Square(5);
+        Measurable myShape2 = new Rectangle(5, 4);
+        System.out.println("For square");
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter() + "\n");
+        System.out.println("For Rectangle");
+        System.out.println(myShape2.getArea());
+        System.out.println(myShape2.getPerimeter());
+
+
+
+
+
+
+
+
+
+
+
 //        Rectangle box1 = new Rectangle(5, 4);
 //        System.out.println(box1.getArea());
 //        System.out.println(box1.getPerimeter());
