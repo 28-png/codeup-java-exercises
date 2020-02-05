@@ -16,12 +16,17 @@ public Student(String name, int grades) {
     }
 
     public void addGrade(int grade) {
-
+        grades.add(grade);
 
     }
 
     public double getGradeAverage() {
-
+    double total = 0;
+    for(int i =0; i < grades.size(); i++) {
+        total = total += grades.indexOf(i);
+    }
+    double average = total / grades.size();
+    return average;
 
     }
 
