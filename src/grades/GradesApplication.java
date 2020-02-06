@@ -65,6 +65,10 @@ public class GradesApplication  {
                 System.out.println("Sorry, no student found with the GitHub username of " + enterName + ".\n");
             System.out.println("Would you like to see another student?");
             enterName = scanner.next();
+            if(enterName.equals("yes"))
+            continue;
+            if (enterName.equals("no"))
+                break;
         } while(!enterName.equals("exit"));
 
     }
