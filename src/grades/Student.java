@@ -23,7 +23,7 @@ public Student(String name, String date, String value) {
     }
 
 //    public void attendanceOfStudents(String date, String value) {
-//        System.out.println(attendance.put(date, value));
+//        attendance.put(date, value);
 //
 //    }
 
@@ -94,7 +94,7 @@ public Student(String name, String date, String value) {
         Student matt = new Student("Matt", "2017-10-02", "Present");
         matt.addGrade(90);
         matt.addGrade(100);
-       matt.addGrade(70);
+        matt.addGrade(70);
         matt.addGrade(80);
         matt.addGrade(88);
         System.out.println("Grades: \n" + convertGrades.convertToString(matt.getGrades()));

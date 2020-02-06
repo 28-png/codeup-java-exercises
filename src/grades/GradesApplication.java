@@ -20,7 +20,6 @@ public class GradesApplication  {
         students.put("Pierce", "Pierce@Guy");
         students.put("Fabio", "Fabio@Gonzalez");
 
-//            showAllGrades.attendanceOfStudents("2017-10-02", "Absent");
 
         do {
             System.out.println("Welcome!\n");
