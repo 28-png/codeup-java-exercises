@@ -54,10 +54,18 @@ public class GradesApplication  {
             System.out.println("What student would you like to see more information on?");
             enterName = scanner.next();
             if(enterName.equals(students.get("Matt")))
-                System.out.println("Name: Matt - Github Username: 28-png");
-            System.out.println("Current Average: " + matt.getGradeAverage());
-
-        } while(!enterName.equals("no"));
+                System.out.println("Name: Matt - Github Username: 28-png \n Current Average: " + matt.getGradeAverage());
+           else if(enterName.equals(students.get("John")))
+                System.out.println("Name: John - Github Username: John@Boyega \n Current Average: " + john.getGradeAverage());
+           else if(enterName.equals(students.get("Pierce")))
+                System.out.println("Name: Pierce - Github Username: Pierce@Guy \n Current Average: " + pierce.getGradeAverage());
+           else if(enterName.equals(students.get("Fabio")))
+                System.out.println("Name: Fabio - Github Username: Fabio@Gonzalez \n Current Average: " + fabio.getGradeAverage());
+           else
+                System.out.println("Sorry, no student found with the GitHub username of " + enterName + ".\n");
+            System.out.println("Would you like to see another student?");
+            enterName = scanner.next();
+        } while(!enterName.equals("exit"));
 
     }
 
