@@ -51,6 +51,9 @@ public class GradesApplication  {
             System.out.println("Welcome!\n");
             System.out.println("Here are the GitHub usernames of our students: \n");
             System.out.println("|28-png| |John@Boyega| |Pierce@Guy| |Fabio@Gonzalez|\n");
+            System.out.println("To view all grades and averages: 0");
+            System.out.println("To view all grades: 1");
+            System.out.println("To view a csv report of all students: 2");
             System.out.println("What student would you like to see more information on?");
             enterName = scanner.next();
             if(enterName.equals(students.get("Matt")))
