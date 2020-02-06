@@ -7,8 +7,20 @@ import java.util.Scanner;
 
 public class GradesApplication  {
 
-    public static void main(String[] args) {
+    public String convertToString(ArrayList<Integer> grades) {
+        StringBuilder builder = new StringBuilder();
+        // Append all Integers in StringBuilder to the StringBuilder.
+        for (Integer grade : grades) {
+            builder.append(grade);
+            builder.append("\n");
+        }
+        // Remove last delimiter with setLength.
+        builder.setLength(builder.length() - 1);
+        return builder.toString();
+    }
 
+    public static void main(String[] args) {
+        GradesApplication convertGrades = new GradesApplication();
         Scanner scanner = new Scanner(System.in);
         String enterName;
         HashMap<String, String> students = new HashMap<>();
@@ -23,7 +35,8 @@ public class GradesApplication  {
         matt.addGrade(70);
         matt.addGrade(80);
         matt.addGrade(88);
-        System.out.println(Arrays.toString());
+        System.out.println();
+        System.out.println("Grades: \n" +convertGrades.convertToString(matt.getGrades()) + "\nAverage:  " + matt.getGradeAverage());
 
         Student john = new Student("John");
         john.addGrade(91);
