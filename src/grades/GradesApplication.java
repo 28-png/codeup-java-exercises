@@ -69,6 +69,7 @@ public class GradesApplication  {
                 continue;
             }
             if (enterName.equals("no")) {
+                System.out.println("Goodbye, and have a wonderful day!");
                 break;
             }
         } while(!enterName.equals("exit"));
