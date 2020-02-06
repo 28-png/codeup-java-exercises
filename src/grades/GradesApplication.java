@@ -11,7 +11,7 @@ public class GradesApplication  {
 
     public static void main(String[] args) {
         IndividualStudents individualStudents = new IndividualStudents();
-        Student showAllGrades = new Student("name");
+        Student showAllGrades = new Student("name", "date", "value");
         Scanner scanner = new Scanner(System.in);
         String enterName;
         HashMap<String, String> students = new HashMap<>();
@@ -19,8 +19,6 @@ public class GradesApplication  {
         students.put("John", "John@Boyega");
         students.put("Pierce", "Pierce@Guy");
         students.put("Fabio", "Fabio@Gonzalez");
-
-
 
         do {
             System.out.println("Welcome!\n");
@@ -35,16 +33,22 @@ public class GradesApplication  {
 
             if(enterName.equals("0"))
                 showAllGrades.allGrades();
+
             else if(enterName.equals("1"))
                 showAllGrades.viewGrades();
+
             else if(enterName.equals("2"))
                 showAllGrades.viewCsv();
+
             else if(enterName.equals(students.get("Matt")))
                individualStudents.studentMatt();
+
            else if(enterName.equals(students.get("John")))
                individualStudents.studentJohn();
+
            else if(enterName.equals(students.get("Pierce")))
                 individualStudents.studentPierce();
+
            else if(enterName.equals(students.get("Fabio")))
                individualStudents.studentFabio();
            else

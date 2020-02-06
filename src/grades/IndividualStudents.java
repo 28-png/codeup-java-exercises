@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class IndividualStudents  {
 
     public void studentMatt() {
-        Student matt = new Student("Matt");
+        Student matt = new Student("Matt", "2017-10-02", "Present");
         matt.addGrade(90);
         matt.addGrade(100);
         matt.addGrade(70);
@@ -15,7 +15,7 @@ public class IndividualStudents  {
     }
 
     public void studentJohn() {
-        Student john = new Student("John");
+        Student john = new Student("John", "2017-10-02", "Absent");
         john.addGrade(91);
         john.addGrade(94);
         john.addGrade(89);
@@ -26,7 +26,7 @@ public class IndividualStudents  {
 
 
     public void studentPierce() {
-        Student pierce = new Student("Pierce");
+        Student pierce = new Student("Pierce", "2017-10-02", "Absent");
         pierce.addGrade(91);
         pierce.addGrade(92);
         pierce.addGrade(84);
@@ -36,7 +36,7 @@ public class IndividualStudents  {
     }
 
     public void studentFabio() {
-        Student fabio = new Student("Fabio");
+        Student fabio = new Student("Fabio", "2017-10-02", "Present");
         fabio.addGrade(87);
         fabio.addGrade(88);
         fabio.addGrade(82);
