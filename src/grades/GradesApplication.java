@@ -62,6 +62,8 @@ public class GradesApplication  {
                 showAllGrades.allGrades();
             else if(enterName.equals("1"))
                 showAllGrades.viewGrades();
+            else if(enterName.equals("2"))
+                showAllGrades.viewCsv();
 
 
             if(enterName.equals(students.get("Matt")))
@@ -75,7 +77,7 @@ public class GradesApplication  {
            else
                 System.out.println("Sorry, no student found with the GitHub username of " + enterName + ".\n");
             System.out.print("Would you like to see another student?");
-            enterName = scanner.next();
+           enterName = scanner.next();
             if(enterName.equals("yes")) {
                 continue;
             }
