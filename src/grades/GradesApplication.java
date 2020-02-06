@@ -7,20 +7,10 @@ import java.util.Scanner;
 
 public class GradesApplication  {
 
-    public String convertToString(ArrayList<Integer> grades) {
-        StringBuilder builder = new StringBuilder();
-        // Append all Integers in StringBuilder to the StringBuilder.
-        for (Integer grade : grades) {
-            builder.append(grade);
-            builder.append("\n");
-        }
-        // Remove last delimiter with setLength.
-        builder.setLength(builder.length() - 1);
-        return builder.toString();
-    }
+
 
     public static void main(String[] args) {
-        GradesApplication convertGrades = new GradesApplication();
+        Student showAllGrades = new Student("name");
         Scanner scanner = new Scanner(System.in);
         String enterName;
         HashMap<String, String> students = new HashMap<>();
@@ -31,12 +21,11 @@ public class GradesApplication  {
 
         Student matt = new Student("Matt");
         matt.addGrade(90);
-        matt.addGrade(100);
+       matt.addGrade(100);
         matt.addGrade(70);
         matt.addGrade(80);
         matt.addGrade(88);
         System.out.println();
-        System.out.println("Grades: \n" +convertGrades.convertToString(matt.getGrades()) + "\nAverage:  " + matt.getGradeAverage());
 
         Student john = new Student("John");
         john.addGrade(91);
@@ -44,7 +33,6 @@ public class GradesApplication  {
         john.addGrade(89);
         john.addGrade(96);
         john.addGrade(100);
-//        System.out.println(john.getGradeAverage() + "\n");
 
         Student pierce = new Student("Pierce");
         pierce.addGrade(91);
@@ -52,7 +40,6 @@ public class GradesApplication  {
         pierce.addGrade(84);
         pierce.addGrade(90);
         pierce.addGrade(87);
-//        System.out.println(john.getGradeAverage() + "\n");
 
         Student fabio = new Student("Fabio");
         fabio.addGrade(87);
@@ -60,9 +47,6 @@ public class GradesApplication  {
         fabio.addGrade(82);
         fabio.addGrade(99);
         fabio.addGrade(80);
-//        System.out.println(john.getGradeAverage());
-
-        System.out.println();
 
         do {
             System.out.println("Welcome!\n");
@@ -73,6 +57,12 @@ public class GradesApplication  {
             System.out.println("To view a csv report of all students: 2\n");
             System.out.print("What student would you like to see more information on?");
             enterName = scanner.next();
+
+            if(enterName.equals("0"))
+                showAllGrades.allGrades();
+            else if(enterName.equals("1"))
+                showAllGrades.viewGrades();
+
 
             if(enterName.equals(students.get("Matt")))
                 System.out.println("Name: Matt - Github Username: 28-png \n Current Average: " + matt.getGradeAverage());
