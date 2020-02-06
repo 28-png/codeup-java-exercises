@@ -1,12 +1,14 @@
 package grades;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class GradesApplication  {
 
     public static void main(String[] args) {
-        boolean yes = true;
+
         Scanner scanner = new Scanner(System.in);
         String enterName;
         HashMap<String, String> students = new HashMap<>();
@@ -21,7 +23,7 @@ public class GradesApplication  {
         matt.addGrade(70);
         matt.addGrade(80);
         matt.addGrade(88);
-//        System.out.println(matt.getGradeAverage() + "\n");
+        System.out.println(Arrays.toString());
 
         Student john = new Student("John");
         john.addGrade(91);
@@ -47,15 +49,18 @@ public class GradesApplication  {
         fabio.addGrade(80);
 //        System.out.println(john.getGradeAverage());
 
+        System.out.println();
+
         do {
             System.out.println("Welcome!\n");
             System.out.println("Here are the GitHub usernames of our students: \n");
             System.out.println("|28-png| |John@Boyega| |Pierce@Guy| |Fabio@Gonzalez|\n");
             System.out.println("To view all grades and averages: 0");
             System.out.println("To view all grades: 1");
-            System.out.println("To view a csv report of all students: 2");
-            System.out.println("What student would you like to see more information on?");
+            System.out.println("To view a csv report of all students: 2\n");
+            System.out.print("What student would you like to see more information on?");
             enterName = scanner.next();
+
             if(enterName.equals(students.get("Matt")))
                 System.out.println("Name: Matt - Github Username: 28-png \n Current Average: " + matt.getGradeAverage());
            else if(enterName.equals(students.get("John")))
@@ -66,7 +71,7 @@ public class GradesApplication  {
                System.out.println("Name: Fabio - Github Username: Fabio@Gonzalez \n Current Average: " + fabio.getGradeAverage());
            else
                 System.out.println("Sorry, no student found with the GitHub username of " + enterName + ".\n");
-            System.out.println("Would you like to see another student?");
+            System.out.print("Would you like to see another student?");
             enterName = scanner.next();
             if(enterName.equals("yes")) {
                 continue;
@@ -75,6 +80,10 @@ public class GradesApplication  {
                 System.out.println("Goodbye, and have a wonderful day!");
                 break;
             }
+
+
+
+
         } while(!enterName.equals("exit"));
 
     }

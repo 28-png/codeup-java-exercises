@@ -15,6 +15,10 @@ public Student(String name) {
     return name;
     }
 
+    public ArrayList<Integer> getGrades() {
+        return this.grades;
+    }
+
     public void addGrade(int grade) {
         grades.add(grade);
 
@@ -27,6 +31,8 @@ public Student(String name) {
     }
     return total / grades.size();
     }
+
+
 
 
 
