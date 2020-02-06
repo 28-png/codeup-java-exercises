@@ -22,12 +22,10 @@ public Student(String name, String date, String value) {
     return name;
     }
 
-    public void attendanceOfStudents() {
-    String A = "Absent";
-    String P = "Present";
-
-
-    }
+//    public void attendanceOfStudents(String date, String value) {
+//        System.out.println(attendance.put(date, value));
+//
+//    }
 
 
     public ArrayList<Integer> getGrades() {
@@ -80,11 +78,11 @@ public Student(String name, String date, String value) {
         pierce.addGrade(87);
         Student fabio = new Student("Fabio", "2017-10-02", "Present");
         fabio.addGrade(87);
-        fabio.addGrade(88);
+       fabio.addGrade(88);
         fabio.addGrade(82);
         fabio.addGrade(99);
         fabio.addGrade(80);
-       System.out.println("Name: Matt - Github Username: 28-png \n Current Average: " + matt.getGradeAverage());
+       System.out.println("Name: Matt - Github Username: 28-png \n Current Average: " + matt.getGradeAverage() + " " );
         System.out.println("\nName: John - Github Username: John@Boyega \n Current Average: " + john.getGradeAverage());
         System.out.println("\nName: Pierce - Github Username: Pierce@Guy \n Current Average: " + pierce.getGradeAverage());
         System.out.println("\nName: Fabio - Github Username: Fabio@Gonzalez \n Current Average: " + fabio.getGradeAverage());

@@ -20,6 +20,8 @@ public class GradesApplication  {
         students.put("Pierce", "Pierce@Guy");
         students.put("Fabio", "Fabio@Gonzalez");
 
+//            showAllGrades.attendanceOfStudents("2017-10-02", "Absent");
+
         do {
             System.out.println("Welcome!\n");
             System.out.println("Here are the GitHub usernames of our students: \n");
@@ -67,6 +69,7 @@ public class GradesApplication  {
 
 
         } while(!enterName.equals("exit"));
+
 
     }
 
