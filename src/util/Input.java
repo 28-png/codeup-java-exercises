@@ -1,5 +1,6 @@
 package util;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -25,20 +26,18 @@ String answer;
 }
 
 public int getInt(int min, int max) {
-    int answer;
+    int answer = 0;
     do {
         System.out.println("Enter a number between " + min + " and " + max + ": ");
-        answer = this.scanner.nextInt();
         try {
-            Integer.valueOf(answer = this.scanner.nextInt());
+            answer = Integer.valueOf(this.scanner.next());
             System.out.println("It successfully parsed");
-        } catch(NumberFormatException e) {
-            System.out.println("It cannot parse");
-            e.printStackTrace();
-        }
-    }while(answer < min || answer > max);
+            } catch(NumberFormatException e) {
+                System.out.println("It cannot parse");
+                 e.printStackTrace();
+             }
+        } while(answer < min || answer > max);
         return answer;
-
 }
 
 public int getInt() {
@@ -49,12 +48,11 @@ public int getInt() {
 }
 
 public double getDouble(double min, double max) {
-    double answer;
+    double answer = 0;
     do {
             System.out.println("Enter a number between " + min + " and " + max + ": ");
-        answer = this.scanner.nextDouble();
-        try {
-           Double.valueOf(answer = this.scanner.nextDouble());
+       try {
+           answer = Double.valueOf(this.scanner.next());
             System.out.println("it has successfully parsed");
        } catch(NumberFormatException e) {
             System.out.println("Cannot parse");
@@ -70,6 +68,39 @@ public double getDouble() {
     answer = this.scanner.nextDouble();
     return answer;
 }
+
+
+public int getBinary() {
+    int answer = 0;
+    do {
+        System.out.print("Enter a Binary number: ");
+        try {
+            answer = Integer.valueOf(scanner.next(), 2);
+            System.out.println(answer);
+            System.out.println("Successfully parsed!");
+        } catch (NumberFormatException e) {
+            System.out.println("Cannot parse!");
+            e.printStackTrace();
+        }
+    } while(answer != 0);
+    return answer;
+}
+
+public int getHex() {
+    int answer = 0;
+    do {
+        System.out.println("Enter a Hexadecimal number: ");
+        try {
+            answer = Integer.parseInt(scanner.next(), 16);
+            System.out.println(answer);
+            System.out.println("Successfully parsed!");
+        } catch (NumberFormatException e) {
+            System.out.println("Cannot Parse!");
+            e.printStackTrace();
+        }
+    } while(answer != 0);
+    return answer;
+    }
 
 
 
