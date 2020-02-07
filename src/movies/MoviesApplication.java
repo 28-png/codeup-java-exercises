@@ -28,7 +28,6 @@ public class MoviesApplication {
             try {
                 choice = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException nfe) {
-//                continue;
                break;
             }
 
