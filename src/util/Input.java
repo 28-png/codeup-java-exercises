@@ -29,6 +29,13 @@ public int getInt(int min, int max) {
     do {
         System.out.println("Enter a number between " + min + " and " + max + ": ");
         answer = this.scanner.nextInt();
+        try {
+            Integer.valueOf(answer = this.scanner.nextInt());
+            System.out.println("It successfully parsed");
+        } catch(NumberFormatException e) {
+            System.out.println("It cannot parse");
+            e.printStackTrace();
+        }
     }while(answer < min || answer > max);
         return answer;
 
@@ -44,8 +51,15 @@ public int getInt() {
 public double getDouble(double min, double max) {
     double answer;
     do {
-        System.out.println("Enter a number between " + min + " and " + max + ": ");
+            System.out.println("Enter a number between " + min + " and " + max + ": ");
         answer = this.scanner.nextDouble();
+        try {
+           Double.valueOf(answer = this.scanner.nextDouble());
+            System.out.println("it has successfully parsed");
+       } catch(NumberFormatException e) {
+            System.out.println("Cannot parse");
+            e.printStackTrace();
+        }
     }while(answer < min || answer > max);
     return answer;
 }
