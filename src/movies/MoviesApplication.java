@@ -23,7 +23,7 @@ public class MoviesApplication {
             System.out.println("\t5 - view movies in the scifi category");
             System.out.println("\t6 - view movies in the musical category");
             System.out.println("\t7 - view movies in the comedy category");
-            System.out.println("");
+          System.out.println("");
             System.out.print("Enter your choice: ");
             try {
                 choice = Integer.parseInt(scanner.nextLine());
